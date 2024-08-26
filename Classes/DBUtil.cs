@@ -989,7 +989,7 @@ namespace SupportUtil.Classes
             for (int x = 0; x < mx; x++) {
                 string buttonstring = "";
                 DataRow row = myDataRows.Rows[x];
-                buttonstring = buttonstring + "<button onclick='showdiv(\"l2div-" + row["ID"].ToString() + "\", this)' style='padding-left:5px;padding-right:5px;width:240px;height:80px;top:" + toppos.ToString() + "px'>";
+                buttonstring = buttonstring + "<button onclick='showdiv(\"l2div-" + row["ID"].ToString() + "\", this)' style='padding-left:5px;padding-right:5px;width:240px;height:80px;top:" + toppos.ToString() + "px' data-link='" + row["url"].ToString()  + "'>";
                 buttonstring = buttonstring + row["text"].ToString();
                 buttonstring = buttonstring + "</button>";
                 int mychildren = 0;
